@@ -96,9 +96,9 @@ description: 这篇文章主要是为了面试算法问题的时候
 
 算法面试，只是面试中的一个环节。
 
-![](.gitbook/assets/image.png)
+![](.gitbook/assets/image%20%2812%29.png)
 
-![](.gitbook/assets/image%20%281%29.png)
+![](.gitbook/assets/image%20%288%29.png)
 
 ### 如何解决算法面试问题的整体思路
 
@@ -116,9 +116,9 @@ description: 这篇文章主要是为了面试算法问题的时候
 
 不要忽视暴力解法。暴力解法通常是思考的起
 
-![](.gitbook/assets/image%20%282%29.png)
-
 ![](.gitbook/assets/image%20%284%29.png)
+
+![](.gitbook/assets/image%20%2810%29.png)
 
 ### 优化算法
 
@@ -130,7 +130,27 @@ description: 这篇文章主要是为了面试算法问题的时候
 
 预处理（排序）
 
+![](.gitbook/assets/image%20%283%29.png)
+
+![](.gitbook/assets/image%20%286%29.png)
+
+## 时间复杂度
+
+到底什么是O\(n\),n 表示数据规模
+
+O\(f\(n\)\)表示运行算法所需要执行的指令数，和f（n）成正比。
+
+![](.gitbook/assets/image%20%281%29.png)
+
+![](.gitbook/assets/image%20%289%29.png)
+
+![](.gitbook/assets/image%20%282%29.png)
+
 ![](.gitbook/assets/image%20%285%29.png)
+
+![](.gitbook/assets/image%20%2811%29.png)
+
+![](.gitbook/assets/image.png)
 
 
 
