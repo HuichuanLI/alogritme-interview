@@ -152,5 +152,9 @@ O\(f\(n\)\)表示运行算法所需要执行的指令数，和f（n）成正比�
 
 ![](.gitbook/assets/image.png)
 
-
-
+| ** 面试leetcode题目 **  | python |
+| :---  |  :--- |
+| ** 第一章 排序基础 **  | python |
+| 1-1 BinarySearch -  |[python](./Chapter01_ArrayProblem/BinarySearch.py)|
+| 1-2 leetcode283 -  |[python](./Chapter01_ArrayProblem/leetcode283.py)|
+| 1-3 leetcode23-  |[python](./Chapter01_ArrayProblem/leetcode23.py)|
