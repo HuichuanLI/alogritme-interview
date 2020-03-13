@@ -155,6 +155,9 @@ O\(f\(n\)\)表示运行算法所需要执行的指令数，和f（n）成正比�
 | ** 面试leetcode题目 **  | python |
 | :---  |  :--- |
 | ** 第一章 排序基础 **  | python |
-| 1-1 BinarySearch -  |[python](./Chapter01_ArrayProblem/BinarySearch.py)|
-| 1-2 leetcode283 -  |[python](./Chapter01_ArrayProblem/leetcode283.py)|
-| 1-3 leetcode23-  |[python](./Chapter01_ArrayProblem/leetcode23.py)|
+| 1-1 BinarySearch   |[python](./Chapter01_ArrayProblem/BinarySearch.py)|
+| 1-2 即使简单的问题，也有很多优化的思路 | 283 27 26 80 |
+| 1-3 三路快排partition思路的应用 Sort Color | 75 88 215 |
+| 1-4 对撞指针 Two Sum II - Input Array is Sorted | 167 125 344 345 11 |
+| 1-5 滑动窗口 Minimum Size Subarray Sum | 209 3 438 76 |
+
