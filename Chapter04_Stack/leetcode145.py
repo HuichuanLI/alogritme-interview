@@ -1,10 +1,5 @@
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
 class Solution:
-    def preorderTraversal(self, root):
+    def postorderTraversal(self, root):
         res = []
         self._predorder(root, res)
         return  res
