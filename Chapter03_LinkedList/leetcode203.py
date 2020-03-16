@@ -29,3 +29,15 @@ class Solution:
                     pp = pt
                 pt = pt.next
             return temp.next
+
+    def removeElements(self, head: ListNode, val: int) -> ListNode:
+        if head != None:
+            temp = ListNode(0)
+            a = temp.next = head
+
+            while temp.next:
+                if temp.next.val == val:
+                    temp.next = temp.next.next
+                else:
+                    temp = temp.next
+            return a.next
