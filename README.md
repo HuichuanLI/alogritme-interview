@@ -174,12 +174,12 @@ O\(f\(n\)\)表示运行算法所需要执行的指令数，和f（n）成正比�
 | 6-6 优先队列 | [无] | [无] |
 | 6-7 优先队列相关的算法问题 Top K Frequent Elements | 347  23 |
 | **第五章 二叉树和递归** | | 
-| 7-1 二叉树天然的递归结构 | 104 | 111 |
-| 7-2 一个简单的二叉树问题引发的血案 Invert Binary Tree | 226 | 100 101 222 110 |
-| 7-3 注意递归的终止条件 Path Sum | 112 | 111 404 |
-| 7-4 定义递归问题 Binary Tree Path | 257 | 113 129 222 |
-| 7-5 稍复杂的递归逻辑 Path Sum III | 437 | [无] |
-| 7-6 二分搜索树中的问题 Lowest Common Ancestor of a Binary Search Tree | 783 235 | 98 450 108 230 236 530 |
+| 7-1 二叉树天然的递归结构 | 104  111 |
+| 7-2 一个简单的二叉树问题引发的血案 Invert Binary Tree | 226  100 101 222 110 |
+| 7-3 注意递归的终止条件 Path Sum | 112  111 404 |
+| 7-4 定义递归问题 Binary Tree Path | 257  113 129 222 |
+| 7-5 稍复杂的递归逻辑 Path Sum III | 437  |
+| 7-6 二分搜索树中的问题 Lowest Common Ancestor of a Binary Search Tree | 783 235  98 450 108 230 236 530 |
 | **第六章 递归和回溯法** | | | | |
 | 8-1 树形问题 Letter Combinations of a Phone Number | 17 | [无] 
 | 8-2 什么是回溯 | 17 | 93 131 |
