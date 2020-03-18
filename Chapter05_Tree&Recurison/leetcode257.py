@@ -1,16 +1,17 @@
 class Solution:
     def binaryTreePaths(self, root):
-        if not root:
-            return []
         res = []
-        self._binaryTreePaths(root, [], res)
-        return res
-
-    def _binaryTreePaths(self, root, path, res):
         if not root:
-            res.append(path)
-            return
-        path.append(root)
-        self._binaryTreePaths(root.left, path, res)
-        self._binaryTreePaths(root.right, path, res)
-        return
+            return res
+
+        if not root.left and not root.right:
+            res.append(str(root.val))
+            return res
+
+        for elem in self.binaryTreePaths(root.left):
+            res.append(str(root.val) + "->" + elem)
+
+        for elem in self.binaryTreePaths(root.right):
+            res.append(str(root.val) + "->" + elem)
+
+        return res
