@@ -1,3 +1,23 @@
+
+
+# 递归
+class Solution:
+    def integerBreak(self, n):
+        if n == 0:
+            return 0
+        if n == 1:
+            return 1
+        res = [0] * (n + 1)
+        return self.breakInteger(n)
+
+    def breakInteger(self, n):
+        if n == 1:
+            return 1
+        res = -1
+        for i in range(1, n):
+            res = max(self.breakInteger(n - i) * i, res, (n - i) * i)
+        return res
+
 # 记忆化搜索
 class Solution:
     def integerBreak(self, n):
@@ -23,7 +43,7 @@ class Solution:
         res[n] = produit
         return produit
 
-
+# 动态规划
 class Solution:
     def integerBreak(self, n):
         if n == 0:
