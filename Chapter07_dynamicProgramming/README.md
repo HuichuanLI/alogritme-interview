@@ -5,4 +5,5 @@
 ![](../.gitbook/assets/image1.png)
 
 
+## O(n*c) 
 ![](../.gitbook/assets/image4.png)
