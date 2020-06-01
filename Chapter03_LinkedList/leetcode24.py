@@ -24,3 +24,23 @@ class Solution:
             return dummyHead
         else:
             return head
+
+
+class Solution:
+    def swapPairs(self, head):
+        if head and head.next:
+            dummyHead = ListNode(0)
+            dummyHead.next = head
+            pre = dummyHead
+            cur = head
+            next = head.next
+            while cur and next:
+                next_next = next.next
+                pre.next = next
+                next.next = cur
+                cur.next = next_next
+                cur = cur.next
+                next = cur.next
+            return dummyHead.next
+        else:
+            return head
