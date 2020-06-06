@@ -24,3 +24,4 @@ class Solution:
                 nxt[k + num] += v
             c = nxt
         return c[S]
+
