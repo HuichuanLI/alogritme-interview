@@ -8,22 +8,27 @@ class Solution(object):
         new_res = []
         index_i = 0
         index_j = 0
-        mid = (len(nums1) + len(nums2)) // 2
-        while index_i < len(nums1) or index_j < len(nums2):
-            while index_i >= len(nums1):
+        mid = (len(nums1) + len(nums2))
+        two_res = False
+        if mid % 2 == 0:
+            two_res = True
+
+        mid = mid // 2
+        while len(new_res) <= mid:
+            if index_i >= len(nums1):
                 new_res.append(nums2[index_j])
                 index_j += 1
-
-            while index_j >= len(nums2):
+            elif index_j >= len(nums2):
                 new_res.append(nums1[index_i])
                 index_i += 1
-
-            while index_i < mid and nums1[index_i] < nums2[index_j]:
+            elif nums1[index_i] <= nums2[index_j]:
                 new_res.append(nums1[index_i])
                 index_i += 1
-
-            while index_j < mid and nums1[index_j] < nums2[index_i]:
+            else:
                 new_res.append(nums2[index_j])
                 index_j += 1
+        if two_res:
+            return (new_res[-1] + new_res[-2]) / 2
+        return new_res[-1]
 
-        return new_res[mid]
+        return 0
