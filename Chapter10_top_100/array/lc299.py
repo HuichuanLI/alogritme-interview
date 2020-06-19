@@ -19,4 +19,9 @@ class Solution:
         return str(sum(bull_visited)) + "A" + str(cows) + "B"
 
 
-
+class Solution:
+    def getHint(self, secret: str, guess: str) -> str:
+        # 极简算法
+        A = sum(s == g for s, g in zip(secret, guess))
+        B = sum((Counter(secret) & Counter(guess)).values()) - A
+        return "{A}A{B}B".format(A=A, B=B)
