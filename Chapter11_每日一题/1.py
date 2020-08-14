@@ -17,7 +17,7 @@ q = []
 heapq.heapify(q)
 c = defaultdict(list)
 for idx, item in enumerate(l):
-    c[item].append(idx)
+    c[item].append(idx)　
 for k in c:
     heapq.heapify(c[k])
     if len(c[k]) >= 2:
