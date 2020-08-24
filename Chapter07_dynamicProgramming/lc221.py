@@ -4,7 +4,7 @@ class Solution:
     @return: an integer
     """
 
-    def maxSquare(self, matrix):
+    def maximalSquare(self, matrix):
         if not matrix or not matrix[0]:
             return 0
 
@@ -13,13 +13,13 @@ class Solution:
         # intialization
         f = [[0] * m for _ in range(n)]
         for i in range(m):
-            f[0][i] = matrix[0][i]
+            f[0][i] = int(matrix[0][i])
 
-        edge = max(matrix[0])
+        edge = max(f[0])
         for i in range(1, n):
-            f[i][0] = matrix[i][0]
+            f[i][0] = int(matrix[i][0])
             for j in range(1, m):
-                if matrix[i][j]:
+                if matrix[i][j] == '1':
                     f[i][j] = min(f[i - 1][j], f[i][j - 1], f[i - 1][j - 1]) + 1
                 else:
                     f[i][j] = 0
