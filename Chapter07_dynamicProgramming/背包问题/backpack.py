@@ -5,6 +5,7 @@ class Solution:
     @return: The maximum size
     """
 
+    # 这个是去统计最多能放多少的
     def backPack(self, m, A):
         # write your code here
         res = [[False] * (m + 1) for _ in range(len(A) + 1)]

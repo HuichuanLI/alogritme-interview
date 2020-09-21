@@ -5,6 +5,7 @@ class Solution:
     @return: An integer
     """
 
+    # 只能放一次，统计能放多少次
     def backPackV(self, nums, target):
         # write your code here
         res = [[0] * (target + 1) for _ in range(2)]

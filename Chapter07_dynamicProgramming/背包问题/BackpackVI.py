@@ -9,6 +9,7 @@ class Solution:
 
     """
 
+    # 这个去统计 又少种可能性没有顺序的
     def backPackVI(self, nums, target):
 
         dp = [0 for i in range(target + 1)]
