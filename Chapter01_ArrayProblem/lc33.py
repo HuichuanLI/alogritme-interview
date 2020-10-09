@@ -1,29 +1,32 @@
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
 
-        start, end = 0, len(nums) - 1
-        if end == -1:
-            return -1
-        while start + 1 < end:
-            mid = start + (end - start) // 2
+        res = -1
+        if not nums:
+            return res
+        if len(nums) == 1:
+            if nums[0] == target:
+                return 0
+            else:
+                return -1
+        left, right = 0, len(nums) - 1
+        while left + 1 < right:
+            mid = left + (right - left) // 2
             if nums[mid] == target:
                 return mid
-
-            if nums[mid] > nums[start]:
-
-                if target >= nums[start] and target <= nums[mid]:
-                    end = mid
+            if nums[left] < nums[mid]:
+                if nums[left] <= target and nums[mid] >= target:
+                    right = mid
                 else:
-                    start = mid
+                    left = mid
             else:
-                if target >= nums[mid] and target <= nums[end]:
-                    start = mid
+                if nums[mid] <= target and nums[right] >= target:
+                    left = mid
                 else:
-                    end = mid
+                    right = mid
 
-        if nums[start] == target:
-            return start
-        if nums[end] == target:
-            return end
+        if nums[left] == target:
+            return left
+        if nums[right] == target:
+            return right
         return -1
-
