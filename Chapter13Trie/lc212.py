@@ -34,8 +34,8 @@ class Trie:
 class Solution:
     """
     @param board: A list of lists of character
-    @param words: A list of string_1
-    @return: A list of string_1
+    @param words: A list of Chapter17String
+    @return: A list of Chapter17String
     """
 
     def findWords(self, board, words):
